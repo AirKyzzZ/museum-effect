@@ -18,6 +18,10 @@
       <p><button>EXPLORE</button> Be a <strong>hero.</strong></p>
     </div>
   </div>
-
+  <div class="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod viverra nisi, et consectetur nisi pellentesque a. Sed euismod viverra nisi, et consectetur nisi pellentesque a. Sed euismod viverra nisi, et consectetur nisi pellentesque a.</p>
+    <p><a href="templates/pages/contact.php">Contact Us</a></p>
+  </div>
 </body>
 </html>
