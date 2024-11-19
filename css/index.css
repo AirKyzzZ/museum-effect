@@ -1,50 +1,64 @@
 * {
-    margin : 0px;
-    padding: 0px;
-    list-style: none;
-    text-decoration: none;
+  margin : 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-    font: 100% system-ui, sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-  }
+  font: 100% system-ui, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
 
-  
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(https://www.familinbordeaux.fr/wp-content/uploads/sites/2/2021/photos-familinparis/mus%C3%A9e/musee-d-aquitaine-bordeaux.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: blur(2px); 
-    z-index: -1; 
-    height: 100vh; 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  
-  .hero_content {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(0%, -50%);
-    transition: all ease 0.3s;
-    z-index: -1; 
+  100% {
+    opacity: 1;
   }
-  
-  h1 {
-    font-size: 60px;
-    margin: 0;
-    font-weight: 900;
-    color: white;
-  }
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://www.familinbordeaux.fr/wp-content/uploads/sites/2/2021/photos-familinparis/mus%C3%A9e/musee-d-aquitaine-bordeaux.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(2px); 
+  z-index: -1; 
+  height: 100vh; 
+  animation: fade-in 1s ease-in-out;
+}
+
+.hero_content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.3s;
+  z-index: -1;
+  animation: fade-in 1s ease-in-out;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  font-weight: 900;
+  color: white;
+}
   
   .explore {
     text-align: left;

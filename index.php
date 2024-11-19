@@ -13,9 +13,9 @@
     </header>
     
   <div class="hero_content">
-    <h1>Bigger than</br>architecture</h1>
+    <h1>Bienvenue au</br>musée d'Aquitaine</h1>
     <div class="explore">
-      <p><button>EXPLORE</button> Be a <strong>hero.</strong></p>
+      <p><button>EXPLORER</button> Be a <strong>hero.</strong></p>
     </div>
   </div>
   <div class="about">
