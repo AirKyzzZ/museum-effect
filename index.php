@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aa</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Accueil - Mussée d'aquitaine</title>
 </head>
 <body>
-    <h1>Bienvenue dans le Musée d'Aquitaine</h1>
-    <p>Le musée d'Aquitaine est un lieu de découverte et d'exploration des oeuvres d'art et de l'histoire de l'Aquitaine.</p>
-    <a href="templates/pages/contact.php">Contactez-nous</a>
+    <div class="hero">
+    <header>
+        <?php include ("templates/template-parts/navbar.php") ?>
+    </header>
+    
+  <div class="hero_content">
+    <h1>Bigger than</br>architecture</h1>
+    <div class="explore">
+      <p><button>EXPLORE</button> Be a <strong>hero.</strong></p>
+    </div>
+  </div>
+
 </body>
 </html>
