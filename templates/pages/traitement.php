@@ -1,18 +1,14 @@
 <?php
-// Inclure la connexion à la base de données
 require 'db.php';
 
-// Vérifier si le formulaire est soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer les données en toute sécurité
-    $nom = htmlspecialchars($_POST['nom']);
+    $nom = htmlspecialchars($_POST['name']);
     $prenom = htmlspecialchars($_POST['prenom']);
-    $age = intval($_POST['dte_naissance']);
-    $email = filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL);
+    $age = intval($_POST['age']);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars($_POST['message']);
-
-    // Préparer et exécuter la requête d'insertion
-    $sql = "INSERT INTO utilisateurs (nom, prenom, dte_naissance, mail, message) 
+    
+    $sql = "INSERT INTO utilisateurs (nom, prenom, age, email, message) 
             VALUES (:nom, :prenom, :age, :email, :message)";
     $stmt = $pdo->prepare($sql);
 
@@ -20,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute([
             ':nom' => $nom,
             ':prenom' => $prenom,
-            ':dte_naissance' => $age,
-            ':mail' => $email,
+            ':age' => $age,
+            ':email' => $email,
             ':message' => $message
         ]);
         echo "Données enregistrées avec succès !";
