@@ -182,7 +182,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(https://www.familinbordeaux.fr/wp-content/uploads/sites/2/2021/photos-familinparis/musée/musee-d-aquitaine-bordeaux.jpg);
+  background-image: url("templates/images/herofull.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
