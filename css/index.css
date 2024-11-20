@@ -56,7 +56,7 @@ body {
 .search-container {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Small gap between input and button */
+  gap: 0.5rem;
 }
 
 .search-form {
