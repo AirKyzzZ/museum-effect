@@ -11,4 +11,5 @@
         <a href="#">Mentions Legales</a>
         <a href="mailto:maxime.mansiet@gmail.com">Mail</a>
     </div>
+    <p>20 cours Pasteur 33000 Bordeaux | 05 56 01 51 00</p>
     <p>&copy; 2024 - Maxime Mansiet - Mael Bourdin. Tous droits réservés.</p>
