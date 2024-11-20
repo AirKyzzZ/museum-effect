@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <title>Accueil - Mussée d'aquitaine</title>
+    <link rel="icon" href="templates/images/logo_head.png" type="image/png">
+
 </head>
 <body>
 <div class="hero">
@@ -41,6 +43,9 @@
   
   <div class="cards">
   <?php include ("templates/template-parts/cards.php") ?>
+  </div>
+  <div class="news">
+      <?php include ("templates/template-parts/news_ticker.php")?>
   </div>
 </div>
 </body>
