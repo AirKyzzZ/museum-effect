@@ -15,10 +15,18 @@
   <div class="hero_content">
     <h1>Bienvenue au</br>musée d'Aquitaine</h1>
     <div class="explore">
-      <p><button>EXPLORER</button> Be a <strong>hero.</strong></p>
+      <p><button id="exploreBtn">EXPLORER</button> Venez <strong>visiter.</strong></p>
     </div>
   </div>
-  <div class="about">
+
+  <script>
+    document.getElementById('exploreBtn').addEventListener('click', function() {
+      var nextSection = document.querySelector('.scrollable');
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+  
+  <div class="scrollable">
     <h2>About Us</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod viverra nisi, et consectetur nisi pellentesque a. Sed euismod viverra nisi, et consectetur nisi pellentesque a. Sed euismod viverra nisi, et consectetur nisi pellentesque a.</p>
     <p><a href="templates/pages/contact.php">Contact Us</a></p>
