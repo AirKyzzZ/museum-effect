@@ -254,19 +254,19 @@ a {
   cursor: pointer;
 }
 
-.about {
+.scrollable {
   position: relative;
   top: 100vh;
   padding: 2rem;
   background-color: #f1f1f1;
 }
 
-.about h2 {
+.scrollable h2 {
   font-size: 36px;
   margin-bottom: 1rem;
 }
 
-.about p {
+.scrollable p {
   font-size: 18px;
   line-height: 1.5;
   color: #333;
