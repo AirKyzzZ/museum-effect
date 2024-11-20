@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-menu a {
-  color: white;
+  color: black;
   font-weight: 600;
   font-size: 1.1rem;
   transition: color 0.3s ease;
@@ -66,7 +66,7 @@ body {
 
 .search-input {
   padding: 0.6rem 1rem; /* Avoid excessive side padding */
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 25px;
   background: transparent;
   color: white;
@@ -76,7 +76,7 @@ body {
 }
 
 .search-input::placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .search-input:focus {
@@ -94,7 +94,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
@@ -186,7 +186,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: blur(2px);
+  filter: blur(2px) opacity(0.8);
   z-index: -1;
   height: 100vh;
   animation: fade-in 1s ease-in-out;
