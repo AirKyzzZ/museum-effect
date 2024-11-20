@@ -1,0 +1,84 @@
+footer {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 1s;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media a {
+    opacity: 0;
+    animation: scaleUp 1.5s ease forwards;
+    animation-delay: 1.2s;
+}
+
+footer .contact a {
+    opacity: 0;
+    animation: slideInLeft 1.5s ease forwards;
+    animation-delay: 1.4s;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 480px) {
+    .social-media img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+footer .social-media, footer .contact {
+    margin: 10px 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .social-media a img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+footer .social-media a:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.2); 
+}
+
+footer .contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .contact a:hover {
+    color: #80e27e; 
+    text-decoration: underline;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #444;
+    margin: 15px 0;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #bbb;
+}
