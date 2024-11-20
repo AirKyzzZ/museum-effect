@@ -1,8 +1,6 @@
 const wrapper = document.querySelector('.news-wrapper');
 const slides = document.querySelectorAll('.news-slide');
 const controls = document.querySelector('.news-controls');
-const prevBtn = document.querySelector('.news-prev');
-const nextBtn = document.querySelector('.news-next');
 
 let currentSlide = 0;
 let startX;
@@ -46,7 +44,7 @@ function resetAutoplay() {
 function startAutoplay() {
     autoplayInterval = setInterval(() => {
         goToSlide(currentSlide + 1);
-    }, 3000);
+    }, 5000);
 }
 
 // Touch and mouse events
@@ -84,10 +82,6 @@ function dragEnd() {
     isDragging = false;
     wrapper.style.cursor = 'grab';
 }
-
-// Navigation buttons
-prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
-nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
 
 // Start autoplay
 startAutoplay();
