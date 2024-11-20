@@ -17,6 +17,9 @@
       <p><button id="exploreBtn">EXPLORER</button> Venez <strong>visiter.</strong></p>
     </div>
     </div>
+    <div class="picture">
+      <img src="templates/images/ville.jpg" alt="Ville" />
+    </div>
     <div class="scroll-indicator">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
             <path d="M12 18l-6-6h12l-6 6z"></path>
