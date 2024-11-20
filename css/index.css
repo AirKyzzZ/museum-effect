@@ -281,6 +281,22 @@ a {
   object-fit: contain; /* Maintain aspect ratio */
 }
 
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-logo img {
+  width: 40px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo img {
+    width: 30px;
+  }
+}
 
 @media (max-width: 1090px) {
   h1 {

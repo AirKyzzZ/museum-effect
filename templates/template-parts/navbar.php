@@ -14,8 +14,13 @@
                 <span></span>
                 <span></span>
             </div>
-            
+            <!-- Add your navbar menu items here -->
             <ul class="navbar-menu">
+                <li class="navbar-logo">
+                    <a href="index.php">
+                        <img src="templates/images/logo_aquitaine.png" alt="Logo Aquitaine">
+                    </a>
+                </li>
                 <li><a href="templates/pages/collections.php">Collections</a></li>
                 <li><a href="templates/pages/exposition.php">Expositions</a></li>
                 <li><a href="templates/pages/visit_acti.php">Visites et Activités</a></li>
