@@ -38,6 +38,10 @@
     <h2>About Us</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod viverra nisi, et consectetur nisi pellentesque a. Sed euismod viverra nisi, et consectetur nisi pellentesque a. Sed euismod viverra nisi, et consectetur nisi pellentesque a.</p>
     <p><a href="templates/pages/contact.php">Contact Us</a></p>
+  
+  <div class="cards">
+  <?php include ("templates/template-parts/cards.php") ?>
   </div>
+</div>
 </body>
 </html>
