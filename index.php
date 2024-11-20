@@ -47,5 +47,10 @@
       <?php include ("templates/template-parts/news_ticker.php")?>
   </div>
 </div>
+
+
+<div class="footer">
+      <?php include ("templates/template-parts/footer.php")?>
+  </div>
 </body>
 </html>
