@@ -12,9 +12,10 @@
         <?php include ("templates/template-parts/navbar.php") ?>
     </header>
     <div class="hero_content">
-        <h1>Bienvenue au Musée</h1>
-        <p>Découvrez nos collections, expositions, et plus encore.</p>
-        <button>Explorez</button>
+    <h1>Bienvenue au</br>musée d'Aquitaine</h1>
+    <div class="explore">
+      <p><button id="exploreBtn">EXPLORER</button> Venez <strong>visiter.</strong></p>
+    </div>
     </div>
     <div class="scroll-indicator">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
