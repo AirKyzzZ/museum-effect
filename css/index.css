@@ -58,10 +58,11 @@ h1 {
   margin: 0;
   font-weight: 900;
   color: white;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
   
   .explore {
-    text-align: left;
+    text-align: left;;
   }
   
   button {
@@ -94,19 +95,19 @@ h1 {
     cursor: pointer;
   }
   
-  .about {
+  .scrollable {
     position: relative;
-    top: 100vh; /* Adjust this value to set the distance between the hero and about sections */
+    top: 100vh; /* Adjust this value to set the distance between the hero and scrollable sections */
     padding: 2rem;
-    background-color: #f1f1f1; /* Change this value to set the background color of the about section */
+    background-color: #f1f1f1; /* Change this value to set the background color of the scrollable section */
   }
   
-  .about h2 {
+  .scrollable h2 {
     font-size: 36px;
     margin-bottom: 1rem;
   }
   
-  .about p {
+  .scrollable p {
     font-size: 18px;
     line-height: 1.5;
   }
@@ -114,6 +115,7 @@ h1 {
   @media (max-width: 1090px) {
     h1 {
       font-size: 40px;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     }
   }
   @media (max-width: 700px) {
