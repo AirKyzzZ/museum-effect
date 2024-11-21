@@ -17,7 +17,7 @@
     <div class="hero_content">
     <h1>Bienvenue au</br>musée d'Aquitaine</h1>
     <div class="explore">
-      <p><button id="exploreBtn">EXPLORER</button> Venez <strong>visiter.</strong></p>
+      <p><button id="exploreBtn">VISITER</button><!--  Venez <strong>visiter.</strong> --></p>
     </div>
     </div>
     <div class="picture">
@@ -30,12 +30,12 @@
     </div>
 </div>
 
-  <script>
-    document.getElementById('exploreBtn').addEventListener('click', function() {
-      var nextSection = document.querySelector('.scrollable');
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    });
-  </script>
+<script>
+  document.getElementById('exploreBtn').addEventListener('click', function() {
+    var nextSection = document.querySelector('.scrollable');
+    nextSection.scrollIntoView({ behavior: 'smooth', block: 'start', top: -76.4 });
+  });
+</script>
   
 <div class="scrollable">
     <center><h2>Explorez notre site</h2><center>
