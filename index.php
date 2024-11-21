@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="hero">
-<header>
+    <header>
         <?php include ("templates/template-parts/navbar.php") ?>
     </header>
     <div class="hero_content">
@@ -51,7 +51,7 @@
 
   <footer>
         <?php include ("templates/template-parts/footer.php")?>
-    </footer>
+  </footer>
 </div>
 </body>
 </html>
