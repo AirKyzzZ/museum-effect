@@ -14,7 +14,7 @@ session_start()
     <header>
         <?php include ("../templates-pages/navbar_page.php") ?>
     </header>
-    <div class="contact">
+    <div class="formulaire">
         <form action="traitement.php" method="POST" class="formulaire">
             <label for="name">Nom :</label>
             <input type="text" id="name" name="name" placeholder="Nom">
