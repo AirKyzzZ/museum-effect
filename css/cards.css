@@ -25,13 +25,20 @@ body{
   border-radius: 25px;
   background-color: #FFF;
 }
-.image-content,
-.card-content{
+.card-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
+  flex-wrap: wrap; /* Allows wrapping of buttons */
+  justify-content: center; /* Centers buttons horizontally */
+  gap: 15px;
+  padding: 23px;
 }
+
+.card-content .button {
+  width: 90%; /* Keeps the button size consistent */
+  text-align: center;
+  margin: 5px; /* Adds some margin to avoid touching edges */
+}
+
 .image-content{
   position: relative;
   row-gap: 5px;
@@ -59,6 +66,7 @@ body{
 .overlay::after{
   border-radius: 0 25px 0 0;
   background-color: #FFF;
+  clear: both; 
 }
 .card-image{
   position: relative;
@@ -76,6 +84,7 @@ body{
   border: 4px solid #f79477;
 }
 .name{
+  padding-top: 13px;
   font-size: 18px;
   font-weight: 500;
   color: #333;
@@ -87,17 +96,14 @@ body{
 }
 .button{
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #FFF;
-  padding: 8px 16px;
   background-color: #f79477;
   border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  text-align: center;
 }
 .button:hover{
-  background: #f79477;
+  background: #e06540;
 }
 
 .swiper-navBtn{
