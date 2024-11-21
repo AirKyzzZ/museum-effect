@@ -36,7 +36,7 @@
                         </button>
                     </form>
                 </li>
-                <li><a href="templates/pages/contact.php">Contactez-nous</a></li>
+                <li class="cacatoes"><a href="templates/pages/contact.php">Contactez-nous</a></li>
             </ul>
         </div>
     </nav>
