@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="css/footer.css">
+
+
+
 
     <div class="social-media">
         <a href="https://www.linkedin.com/in/maxime-mansiet-6b5934334/"><img src="templates/images/facebook.png" alt="LinkedIn"></a>
