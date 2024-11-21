@@ -1,6 +1,7 @@
 <?php 
 session_start()
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +12,8 @@ session_start()
 </head>
 <body>
     <header>
-        <?php include ("templates/template-parts/navbar.php") ?>
-    </header
+        <?php include ("../templates-pages/navbar_page.php") ?>
+    </header>
     <div class="contact">
         <form action="traitement.php" method="POST" class="formulaire">
             <label for="name">Nom :</label>
@@ -34,7 +35,7 @@ session_start()
         </form>
     </div>
     <footer>
-        <?php include ("templates/template-parts/footer.php")?>
+        <?php include ("../templates-pages/footer_page.php")?>
     </footer>
 </body>
 </html>
