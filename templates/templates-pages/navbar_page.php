@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="../../css/navbar.css">
 
 
 <body>
@@ -11,8 +11,8 @@
             </div>
             <ul class="navbar-menu">
                 <li class="navbar-logo">
-                    <a href="index.php">
-                        <img src="templates/images/logo_aquitaine.png" alt="Logo Aquitaine">
+                    <a href="../../index.php">
+                        <img src="../images/logo_aquitaine.png" alt="Logo Aquitaine">     
                     </a>
                 </li>
                 <li><a href="templates/pages/collections.php">Collections</a></li>
