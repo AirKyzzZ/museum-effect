@@ -184,7 +184,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(https://cdn.discordapp.com/attachments/880000348415225899/1308812425478406307/hero_1.jpg?ex=673f4e0e&is=673dfc8e&hm=a7169d4a090ae1ddadb759034da486fccaf20eb71e99341e8a655c1a8f1b67ef&);
+  background-image: url(https://cdn.discordapp.com/attachments/880000348415225899/1308812425478406307/hero_1.jpg?ex=67409f8e&is=673f4e0e&hm=c0c1a10ecf0aa3b7083d133c8e1e429af7552d23f105b49c9564899d808f6fda&);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -267,6 +267,12 @@ a {
   font-size: 18px;
   line-height: 1.5;
   color: #333;
+}
+
+.cacatoes {
+  background-color: white;
+  padding: 12px;
+  border-radius: 12px;
 }
 
 .picture {
