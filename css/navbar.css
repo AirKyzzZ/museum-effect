@@ -39,9 +39,14 @@ body {
     gap: 2.4rem;
   }
   
+  .navbar-logo img {
+    width: 40px;
+    height: auto;
+}
+
   .navbar-menu a {
     color: black;
-    font-weight: 600;
+    font-weight: 20;
     font-size: 1.1rem;
     transition: color 0.3s ease;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
