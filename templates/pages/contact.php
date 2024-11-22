@@ -1,5 +1,5 @@
 <?php 
-session_start()
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -15,27 +15,47 @@ session_start()
         <?php include ("../templates-pages/navbar_page.php") ?>
     </header>
     <div class="formulaire">
-        <form action="traitement.php" method="POST" class="formulaire">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" placeholder="Nom">
+        <form action="traitement.php" method="POST" class="form-container">
+            <h2>Contactez-nous</h2>
+            <div class="input-group">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Nom</label>
+                <div class="line"></div>
+            </div>
             
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+            <div class="input-group">
+                <input type="text" id="prenom" name="prenom" required>
+                <label for="prenom">Prénom</label>
+                <div class="line"></div>
+            </div>
             
-            <label for="age">Âge :</label>
-            <input type="number" id="age" name="age" placeholder="Age">
+            <div class="input-group">
+                <input type="number" id="age" name="age" required>
+                <label for="age">Âge</label>
+                <div class="line"></div>
+            </div>
             
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Email">
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+                <div class="line"></div>
+            </div>
             
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <div class="input-group">
+                <textarea id="message" name="message" required></textarea>
+                <label for="message">Message</label>
+                <div class="line"></div>
+            </div>
             
-            <button type="submit">Envoyer</button>
+            <button type="submit">
+                <span>Envoyer</span>
+                <div class="wave"></div>
+            </button>
         </form>
     </div>
     <footer>
         <?php include ("../templates-pages/footer_page.php")?>
     </footer>
+    <script src="../../js/contact.js"></script>
 </body>
 </html>
