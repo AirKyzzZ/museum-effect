@@ -1,25 +1,151 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
-
 .formulaire {
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     background-image: url(../templates/images/contact_musee.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: -1;
-    height: 100vh;
-    animation: fade-in 1s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: formAppear 0.6s ease-out;
+}
+
+@keyframes formAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container h2 {
+    color: #FF8C00;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #555;
+    transition: 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #777;
+    font-size: 1rem;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+    top: -20px;
+    font-size: 0.8rem;
+    color: #FF8C00;
+}
+
+.input-group .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FF8C00;
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ .line,
+.input-group textarea:focus ~ .line {
+    width: 100%;
+}
+
+.input-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    background: #FF8C00;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff9f2f;
+    transform: translateY(-2px);
+}
+
+button .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-100%);
+    transition: 0.3s;
+}
+
+button:hover .wave {
+    transform: translateX(100%);
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 2rem;
+        margin: 1rem;
+    }
 }
