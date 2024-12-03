@@ -36,7 +36,7 @@
   });
 </script>
   
-<div class="scrollable">
+<div class="scrollable"><br>
     <center><h2>Explorez notre site</h2><center>
     <p>Nous sommes ravis de vous accueillir sur le site officiel du Musée d'Aquitaine, un lieu où l'histoire et la culture de notre région prennent vie. Explorez nos collections riches et variées, découvrez des expositions fascinantes et plongez dans le patrimoine unique de l'Aquitaine. Que vous soyez passionné d'histoire, amateur d'art ou simplement curieux, notre musée offre une expérience enrichissante pour tous. Nous vous invitons à parcourir notre site pour en savoir plus sur nos événements, nos activités et nos ressources éducatives. Bonne visite !</p>
   
