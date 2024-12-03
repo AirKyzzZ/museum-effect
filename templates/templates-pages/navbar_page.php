@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="../../css/navbar.css">
-
+<link rel="stylesheet" href="css/navbar.css">
 
 <body>
     <nav class="navbar">
@@ -11,14 +10,46 @@
             </div>
             <ul class="navbar-menu">
                 <li class="navbar-logo">
-                    <a href="../../index.php">
-                        <img src="../images/logo_aquitaine.png" alt="Logo Aquitaine">     
+                    <a href="index.php">
+                        <img src="templates/images/logo_aquitaine.png" alt="Logo Aquitaine">
                     </a>
                 </li>
-                <li><a href="templates/pages/collections.php">Collections</a></li>
-                <li><a href="templates/pages/exposition.php">Expositions</a></li>
-                <li><a href="templates/pages/visit_acti.php">Visites et Activités</a></li>
-                <li><a href="templates/pages/boutique.php">Boutique</a></li>
+                <li class="dropdown">
+                    <a href="templates/pages/collections.php">Collections</a>
+                    <div class="dropdown-content">
+                        <a href="#">Art Moderne</a>
+                        <a href="#">Art Contemporain</a>
+                        <a href="#">Sculptures</a>
+                        <a href="#">Photographie</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="templates/pages/exposition.php">Expositions</a>
+                    <div class="dropdown-content">
+                        <a href="#">Expositions Actuelles</a>
+                        <a href="#">À Venir</a>
+                        <a href="#">Archives</a>
+                        <a href="#">Événements Spéciaux</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="templates/pages/visit_acti.php">Visites et Activités</a>
+                    <div class="dropdown-content">
+                        <a href="#">Visites Guidées</a>
+                        <a href="#">Ateliers</a>
+                        <a href="#">Conférences</a>
+                        <a href="#">Activités Jeunesse</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="templates/pages/boutique.php">Boutique</a>
+                    <div class="dropdown-content">
+                        <a href="#">Livres d'Art</a>
+                        <a href="#">Reproductions</a>
+                        <a href="#">Objets Décoratifs</a>
+                        <a href="#">Éditions Limitées</a>
+                    </div>
+                </li>
                 <li class="search-container">
                     <form class="search-form">
                         <input type="search" placeholder="Rechercher..." class="search-input">
@@ -50,6 +81,38 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Mobile dropdown toggles
+        document.querySelectorAll('.dropdown > a').forEach(dropdownToggle => {
+            dropdownToggle.addEventListener('click', function(e) {
+                if (window.innerWidth <= 1200) {
+                    e.preventDefault();
+                    const dropdown = this.parentElement;
+                    dropdown.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    document.querySelectorAll('.dropdown').forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 1200) {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // Add delay to dropdown items animation
+        document.querySelectorAll('.dropdown-content a').forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.05}s`;
         });
     </script>
 </body>
