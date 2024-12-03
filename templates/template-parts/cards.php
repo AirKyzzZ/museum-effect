@@ -44,7 +44,7 @@
           </div>
 
           
-            <h2 class="name">Visites et activités</h2><div class="card-content">
+            <h2 class="name">Visites</h2><div class="card-content">
 
             <button class="button">Agenda</button>
             <button class="button">S'amuser au musée</button>
