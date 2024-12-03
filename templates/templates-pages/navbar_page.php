@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="../../css/navbar.css">
 
 <body>
     <nav class="navbar">
@@ -10,12 +10,12 @@
             </div>
             <ul class="navbar-menu">
                 <li class="navbar-logo">
-                    <a href="index.php">
-                        <img src="templates/images/logo_aquitaine.png" alt="Logo Aquitaine">
+                    <a href="../../index.php">
+                        <img src="../images/logo_aquitaine.png" alt="Logo Aquitaine">
                     </a>
                 </li>
                 <li class="dropdown">
-                    <a href="templates/pages/collections.php">Collections</a>
+                    <a href="/templates/pages/collections.php">Collections</a>
                     <div class="dropdown-content">
                         <a href="#">Art Moderne</a>
                         <a href="#">Art Contemporain</a>
@@ -24,7 +24,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="templates/pages/exposition.php">Expositions</a>
+                    <a href="/templates/pages/exposition.php">Expositions</a>
                     <div class="dropdown-content">
                         <a href="#">Expositions Actuelles</a>
                         <a href="#">À Venir</a>
