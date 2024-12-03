@@ -12,6 +12,15 @@ body {
     width: 100%;
 }
 
+.content {
+    margin-top: 120px; /* Adjust this value to match the height of your navbar */
+    padding: 20px;
+}
+
+.content h1:hover {
+    color:#f79477;
+}
+
 /* .navbar {
     position: fixed;
     width: 100%;
