@@ -15,7 +15,7 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <a href="collections.php">Collections</a>
+                    <a href="templates/pages/collections.php">Collections</a>
                     <div class="dropdown-content">
                         <a href="#">Collections en ligne du musée d'Aquitaine</a>
                         <a href="#">Les objets phares du musée</a>
@@ -27,7 +27,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="exposition.php">Expositions</a>
+                    <a href="templates/pages/exposition.php">Expositions</a>
                     <div class="dropdown-content">
                         <a href="#">Exposition photographique | 28 août 1944 Libres !</a>
                         <a href="#">Le parcours 400 000 ans d'histoire(s)</a>
@@ -37,7 +37,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="visit_acti.php">Visites et Activités</a>
+                    <a href="templates/pages/visit_acti.php">Visites et Activités</a>
                     <div class="dropdown-content">
                     <a href="#">Agenda</a>
                     <a href="#">Feuilleter les nouveaux programmes</a>
@@ -55,7 +55,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="boutique.php">Boutique</a>
+                    <a href="templates/pages/boutique.php">Boutique</a>
                     <div class="dropdown-content">
                         <a href="#">Bienvenue dans la boutique</a>
                         <a href="#">Idées cadeaux</a> 

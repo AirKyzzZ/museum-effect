@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../css/footer.css">
+<footer><link rel="stylesheet" href="../../css/footer.css">
 
 
 
@@ -17,3 +17,4 @@
     </div>
     <p>20 cours Pasteur 33000 Bordeaux | 05 56 01 51 00</p>
     <p>&copy; 2024 - Maxime Mansiet - Mael Bourdin. Tous droits réservés.</p>
+</footer>
