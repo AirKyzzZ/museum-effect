@@ -11,9 +11,7 @@ session_start();
     <link rel="stylesheet" href="../../css/contact.css">
 </head>
 <body>
-    <header>
         <?php include ("../templates-pages/navbar_page.php") ?>
-    </header>
     <div class="formulaire">
         <form action="traitement.php" method="POST" class="form-container">
             <h2>Contactez-nous</h2>
@@ -53,9 +51,7 @@ session_start();
             </button>
         </form>
     </div>
-    <footer>
         <?php include ("../templates-pages/footer_page.php")?>
-    </footer>
     <script src="../../js/contact.js"></script>
 </body>
 </html>
