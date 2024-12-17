@@ -29,9 +29,9 @@
                 <li class="dropdown">
                     <a href="exposition.php">Expositions</a>
                     <div class="dropdown-content">
-                        <a href="#">Exposition photographique | 28 août 1944 Libres !</a>
+                        <a href="#">Exposition photographique</a>
                         <a href="#">Le parcours 400 000 ans d'histoire(s)</a>
-                        <a href="#">En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale</a>
+                        <a href="#">Bordeaux durant la Seconde Guerre mondiale</a>
                         <a href="#">Musée virtuel d'épigraphie</a>
                         <a href="#">Archives des expositions temporaires</a>
                     </div>
@@ -40,7 +40,7 @@
                     <a href="visit_acti.php">Visites et Activités</a>
                     <div class="dropdown-content">
                     <a href="#">Agenda</a>
-                    <a href="#">Feuilleter les nouveaux programmes</a>
+                    <a href="#">Nouveaux programmes</a>
                     <a href="#">Accueil des groupes</a>
                     <a href="#">Relais et publics du champ social</a>
                     <a href="#">Visiteurs en situation de handicap</a>
