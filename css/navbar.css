@@ -60,7 +60,7 @@ body {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.15);
+     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     border-bottom: 2px solid #f79477;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
