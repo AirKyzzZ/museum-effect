@@ -9,18 +9,20 @@
 - [Technologies utilisées](#Technologies-utilisées)
 - [Installation](#Installation)
 - [Soutenance orale](#Soutenance-orale)
-- [Soutenance orale](#Soutenance-orale)
+- [Liens de téléchargement](#Liens-de-téléchargement)
 
 ## Présentation du projet
 :star: Ce projet a été réalisé dans le cadre de la formation EPSI (École d'Ingénierie et de Management des Systèmes d'Information) en tant que projet solution web. L'objectif est de créer un site web pour le musée d'Aquitaine, permettant aux visiteurs de découvrir l'histoire et la culture de la région. :star:
 
+[Repository du projet](https://github.com/AirKyzzZ/museum-effect)
+
 ## Screenshot
 
-![Screenshot de l'index du site](path/to/your/screenshot.png)
+![Screenshot de l'index du site](templates/images/screenshot.png)
 
 ## Équipe
-- Maxime : Développeur front-end et intégrateur :computer:
-- Mael : Développeur back-end et base de données :computer:
+- Maxime : Développeur fullstack :computer:
+- Mael : Développeur fullstack :computer:
 
 ## Objectifs
 :dart: Les objectifs sont les suivants :dart:
@@ -58,6 +60,8 @@
 
 ## Soutenance orale
 :microphone: Ce projet a été présenté lors d'une soutenance, où nous avons expliqué notre travail, les difficultés rencontrées et les solutions apportées. Nous avons démontré le fonctionnement du site web et répondu aux questions des jury. :microphone:
+
+[Notre présentation](https://www.canva.com/design/DAGZQ4FKEQo/MMGgV4O24i6EulG0mot_vw/edit?utm_content=DAGZQ4FKEQo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 :trophy: Le projet a été évalué et nous a permis de mettre en pratique les connaissances acquises en PHP, SQL et en développement web. Il a également permis de développer des compétences en communication et en gestion de projet. :trophy:
 
