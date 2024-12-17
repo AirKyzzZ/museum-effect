@@ -15,7 +15,7 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <a href="templates/pages/collections.php">Collections</a>
+                    <a href="#">Collections</a>
                     <div class="dropdown-content">
                         <a href="https://musee-aquitaine.opacweb.fr/fr/">Collections en ligne du musée d'Aquitaine</a>
                         <a href="templates/pages/les-objets-phares-du-musee.php">Les objets phares du musée</a>
@@ -27,7 +27,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="templates/pages/exposition.php">Expositions</a>
+                    <a href="#">Expositions</a>
                     <div class="dropdown-content">
                         <a href="templates/pages/exposition-photographique-28-aout-1944-libres.php">Exposition photographique | 28 août 1944 Libres !</a>
                         <a href="templates/pages/le-parcours-400-000-ans-dhistoire.php">Le parcours 400 000 ans d'histoire(s)</a>
@@ -37,7 +37,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="templates/pages/visit_acti.php">Visites et Activités</a>
+                    <a href="#">Visites et Activités</a>
                     <div class="dropdown-content">
                     <a href="templates/pages/Agenda.php">Agenda</a>
                     <a href="templates/pages/Feuilleter-les-nouveaux-programmes.php">Feuilleter les nouveaux programmes</a>
@@ -52,7 +52,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="templates/pages/boutique.php">Boutique</a>
+                    <a href="#">Boutique</a>
                     <div class="dropdown-content">
                         <a href="templates/pages/Bienvenue-dans-la-boutique.php">Bienvenue dans la boutique</a>
                         <a href="templates/pages/Idees-cadeaux.php">Idées cadeaux</a> 
