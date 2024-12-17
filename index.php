@@ -32,7 +32,10 @@
 <script>
   document.getElementById('exploreBtn').addEventListener('click', function() {
     var nextSection = document.querySelector('.scrollable');
-    nextSection.scrollIntoView({ behavior: 'smooth', block: 'start', top: -76.4 });
+    nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Ajout du décalage après le scroll
+    window.scrollBy(0, -76.4);  // Décalage de -76.4 pixels vers le haut
   });
 </script>
   
