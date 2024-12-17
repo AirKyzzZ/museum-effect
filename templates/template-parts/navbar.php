@@ -47,11 +47,8 @@
                     <a href="#">S'amuser au musée</a>
                     <a href="#">Vous êtes guide-conférencier</a>
                     <a href="#">Bibliothèque</a>
-                    <a href="#">Conférences en ligne</a>
                     <a href="#">Activités scolaires</a>
                     <a href="#">Le musée dans la classe</a>
-                    <a href="#">Le musée chez soi</a>
-                    <a href="#">Actualités du musée</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -66,8 +63,15 @@
 
 
                 <li class="search-container">
-                    <form class="search-form" action="search.php" method="get">
-                        <input type="search" placeholder="Rechercher..." class="search-input" name="q" id="search-input">
+                    <form id="search-form" class="search-form">
+                        <input type="search" id="search-input" placeholder="Rechercher..." class="search-input" list="search-options">
+                        <datalist id="search-options">
+                            <option value="Collections">
+                            <option value="Expositions">
+                            <option value="Activités">
+                            <option value="Boutique">
+                            <option value="Contact">
+                        </datalist>
                         <button type="submit" class="search-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="11" cy="11" r="8"></circle>
@@ -76,7 +80,6 @@
                         </button>
                     </form>
                 </li>
-
                 <li class="cacatoes"><a href="templates/pages/contact.php">Contactez-nous</a></li>
             </ul>
         </div> 
@@ -131,23 +134,23 @@
         });
 
         // Autocomplete functionality using jQuery UI Autocomplete
-        $(function() {
-            $("#search-input").autocomplete({
-                source: function(request, response) {
-                    $.ajax({
-                        url: "search.php",
-                        type: "GET",
-                        data: {
-                            q: request.term
-                        },
-                        success: function(data) {
-                            response(data);
-                        }
-                    });
-                },
-                minLength: 3
-            });
-        });
+        const searchRoutes = {
+        "collections": "templates/pages/collections.php",
+        "expositions": "templates/pages/exposition.php",
+        "activités": "templates/pages/visit_acti.php",
+        "boutique": "templates/pages/boutique.php",
+        "contact": "templates/pages/contact.php"
+        };
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const query = document.getElementById('search-input').value.trim().toLowerCase();
+
+        if (searchRoutes[query]) {
+            window.location.href = searchRoutes[query];
+        } else {
+            alert('Aucune page ne correspond à votre recherche.');
+        }
+    });
     </script>
 </body>
 </html>
