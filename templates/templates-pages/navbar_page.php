@@ -60,7 +60,7 @@
                         <a href="#">Bienvenue dans la boutique</a>
                         <a href="#">Idées cadeaux</a> 
                         <a href="#">Librairie</a>
-                        <a href="#">Tirages Félix Arnaudin</a>
+                        <a href="../pages/Tirage-Felix-Arnaudin.php">Tirages Félix Arnaudin</a>
                     </div>
                 </li>
                 <li class="search-container">
@@ -96,7 +96,6 @@
             }
         });
 
-        // Mobile dropdown toggles
         document.querySelectorAll('.dropdown > a').forEach(dropdownToggle => {
             dropdownToggle.addEventListener('click', function(e) {
                 if (window.innerWidth <= 1200) {
@@ -104,7 +103,6 @@
                     const dropdown = this.parentElement;
                     dropdown.classList.toggle('active');
                     
-                    // Close other dropdowns
                     document.querySelectorAll('.dropdown').forEach(otherDropdown => {
                         if (otherDropdown !== dropdown) {
                             otherDropdown.classList.remove('active');
@@ -114,7 +112,6 @@
             });
         });
 
-        // Handle window resize
         window.addEventListener('resize', function() {
             if (window.innerWidth > 1200) {
                 document.querySelectorAll('.dropdown').forEach(dropdown => {
@@ -123,7 +120,6 @@
             }
         });
 
-        // Add delay to dropdown items animation
         document.querySelectorAll('.dropdown-content a').forEach((item, index) => {
             item.style.transitionDelay = `${index * 0.05}s`;
         });
