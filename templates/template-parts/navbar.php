@@ -130,24 +130,6 @@
             item.style.transitionDelay = `${index * 0.01}s`;
         });
 
-        // Autocomplete functionality using jQuery UI Autocomplete
-        $(function() {
-            $("#search-input").autocomplete({
-                source: function(request, response) {
-                    $.ajax({
-                        url: "search.php",
-                        type: "GET",
-                        data: {
-                            q: request.term
-                        },
-                        success: function(data) {
-                            response(data);
-                        }
-                    });
-                },
-                minLength: 3
-            });
-        });
     </script>
 </body>
 </html>
