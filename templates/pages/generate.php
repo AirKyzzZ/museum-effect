@@ -26,7 +26,7 @@ if ($stmt) {
             $content .= "<?php include ('../templates-pages/navbar_page.php') ?>\n";
             $content .= "<div class='content'>\n";
             $content .= "<title>" . htmlspecialchars($row['titre'], ENT_QUOTES) . "</title>\n";
-            $content .= "<link rel='stylesheet' type='text/css' href='../../css/style.css'>\n";
+            $content .= "<link rel='stylesheet' type='text/css' href='../../css/style.css'>\n <link rel='icon' href='../images/logo_head.png' type='image/png'>\n";
             $content .= "</head>\n<body>\n";
             $content .= "<h1>➔" . ucfirst(str_replace('-', ' ', htmlspecialchars($row['titre'], ENT_QUOTES))) . "</h1><br/>\n";
             $content .= "<p>" . htmlspecialchars($row['contenu'], ENT_QUOTES) . "</p>\n";
