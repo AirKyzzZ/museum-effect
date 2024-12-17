@@ -1,4 +1,3 @@
-
 <head>
     <link rel="icon" href="../images/logo_head.png" type="image/png">
     <link rel="stylesheet" href="../../css/navbar.css">
@@ -64,8 +63,36 @@
                     </div>
                 </li>
                 <li class="search-container">
-                    <form class="search-form">
-                        <input type="search" placeholder="Rechercher..." class="search-input">
+                    <form id="search-form" class="search-form">
+                        <input type="search" id="search-input" placeholder="Rechercher..." class="search-input" list="search-options">
+                        <datalist id="search-options">
+                            <option value="Collections en ligne du musée d'Aquitaine">
+                            <option value="Les objets phares du musée">
+                            <option value="Acquisitions récentes">
+                            <option value="Contacter un chargé de collection">
+                            <option value="Le musée, d'hier à aujourd'hui">
+                            <option value="Le Centre Jean Moulin">
+                            <option value="Le musée Goupil">
+                            <option value="Exposition photographique | 28 août 1944 Libres !">
+                            <option value="Le parcours 400 000 ans d'histoire(s)">
+                            <option value="En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale">
+                            <option value="Musée virtuel d'épigraphie">
+                            <option value="Archives des expositions temporaires">
+                            <option value="Agenda">
+                            <option value="Feuilleter les nouveaux programmes">
+                            <option value="Accueil des groupes">
+                            <option value="Relais et publics du champ social">
+                            <option value="Visiteurs en situation de handicap">
+                            <option value="S'amuser au musée">
+                            <option value="Vous êtes guide-conférencier">
+                            <option value="Bibliothèque">
+                            <option value="Activités scolaires">
+                            <option value="Le musée dans la classe">
+                            <option value="Bienvenue dans la boutique">
+                            <option value="Idées cadeaux">
+                            <option value="Librairie">
+                            <option value="Tirages Félix Arnaudin">
+                        </datalist>
                         <button type="submit" class="search-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="11" cy="11" r="8"></circle>
@@ -122,6 +149,93 @@
 
         document.querySelectorAll('.dropdown-content a').forEach((item, index) => {
             item.style.transitionDelay = `${index * 0.05}s`;
+        });
+
+        const searchRoutes = {
+            "collections en ligne du musée d'Aquitaine": "https://musee-aquitaine.opacweb.fr/fr/",
+            "les objets phares du musée": "les-objets-phares-du-musee.php",
+            "acquisitions récentes": "acquisitions.php",
+            "contacter un chargé de collection": "contacter-un-ou-une-chargee-de-collections.php",
+            "le musée, d'hier à aujourd'hui": "Le-musee-d-hier-a-aujourd-hui.php",
+            "le centre jean moulin": "centre-national-jean-moulin.php",
+            "le musée goupil": "https://musee-goupil.opacweb.fr/fr/",
+            "exposition photographique | 28 août 1944 libres !": "exposition-photographique-28-aout-1944-libres.php",
+            "le parcours 400 000 ans d'histoire(s)": "le-parcours-400-000-ans-dhistoire.php",
+            "en ligne | destinées juives à bordeaux durant la seconde guerre mondiale": "expo-virtuelle-destinees-juives-bordeaux-durant-la-seconde-guerre-mondiale.php",
+            "musée virtuel d'épigraphie": "musee-virtuel-epigraphie.php",
+            "archives des expositions temporaires": "archives-des-expositions-temporaires.php",
+            "agenda": "Agenda.php",
+            "feuilleter les nouveaux programmes": "Feuilleter-les-nouveaux-programmes.php",
+            "accueil des groupes": "Accueil-des-groupes.php",
+            "relais et publics du champ social": "Relais-et-publics-du-champ-social.php",
+            "visiteurs en situation de handicap": "Visiteurs-en-situation-de-handicap.php",
+            "s'amuser au musée": "S-amuser-au-musee.php",
+            "vous êtes guide-conférencier": "Vous-etes-guide-conférencier.php",
+            "bibliothèque": "Bibliotheque.php",
+            "activités scolaires": "Activites-scolaires.php",
+            "le musée dans la classe": "Le-musee-dans-la-classe.php",
+            "bienvenue dans la boutique": "Bienvenue-dans-la-boutique.php",
+            "idées cadeaux": "Idees-cadeaux.php",
+            "librairie": "Librairie.php",
+            "tirages félix arnaudin": "Tirage-Felix-Arnaudin.php"
+        };
+
+        const searchInput = document.getElementById('search-input');
+        const searchOptions = document.getElementById('search-options');
+
+        // Fonction pour masquer les options du datalist jusqu'à la première saisie
+        searchInput.addEventListener('focus', function() {
+            if (this.value === '') {
+                searchOptions.innerHTML = ''; // Vider les options avant la saisie
+            }
+        });
+
+        // Restaure les options du datalist quand l'utilisateur commence à taper
+        searchInput.addEventListener('input', function() {
+            const query = this.value.trim().toLowerCase();
+            if (query !== '') {
+                // Restaure toutes les options du datalist
+                searchOptions.innerHTML = `
+                    <option value="Collections en ligne du musée d'Aquitaine">
+                    <option value="Les objets phares du musée">
+                    <option value="Acquisitions récentes">
+                    <option value="Contacter un chargé de collection">
+                    <option value="Le musée, d'hier à aujourd'hui">
+                    <option value="Le Centre Jean Moulin">
+                    <option value="Le musée Goupil">
+                    <option value="Exposition photographique | 28 août 1944 Libres !">
+                    <option value="Le parcours 400 000 ans d'histoire(s)">
+                    <option value="En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale">
+                    <option value="Musée virtuel d'épigraphie">
+                    <option value="Archives des expositions temporaires">
+                    <option value="Agenda">
+                    <option value="Feuilleter les nouveaux programmes">
+                    <option value="Accueil des groupes">
+                    <option value="Relais et publics du champ social">
+                    <option value="Visiteurs en situation de handicap">
+                    <option value="S'amuser au musée">
+                    <option value="Vous êtes guide-conférencier">
+                    <option value="Bibliothèque">
+                    <option value="Activités scolaires">
+                    <option value="Le musée dans la classe">
+                    <option value="Bienvenue dans la boutique">
+                    <option value="Idées cadeaux">
+                    <option value="Librairie">
+                    <option value="Tirages Félix Arnaudin">
+                `;
+            }
+        });
+
+        // Gère la soumission du formulaire
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = searchInput.value.trim().toLowerCase();
+
+            if (searchRoutes[query]) {
+                window.location.href = searchRoutes[query];
+            } else {
+                alert('Aucune page ne correspond à votre recherche.');
+            }
         });
     </script>
 </body>
