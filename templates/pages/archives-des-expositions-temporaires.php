@@ -1,21 +1,23 @@
 <?php include 'db.php'; ?>
 <?php $row = array (
-  'titre' => 'test',
-  'contenu' => 'Voici un autre contenu test pour un autre article.',
-  'image' => 'image2.png',
+  'titre' => 'archives-des-expositions-temporaires',
+  'contenu' => 'Expositions 2024 ...
+[ARCHIVES]',
+  'image' => 'image5.jpg',
 ); ?>
 <!DOCTYPE html>
 <html>
 <head>
 <?php include ('../templates-pages/navbar_page.php') ?>
 <div class='content'>
-<title>test</title>
+<title>archives-des-expositions-temporaires</title>
 <link rel='stylesheet' type='text/css' href='../../css/style.css'>
 </head>
 <body>
-<h1>➔Test</h1><br/>
-<p>Voici un autre contenu test pour un autre article.</p>
-<img src='image2.png' alt=''>
+<h1>➔Archives des expositions temporaires</h1><br/>
+<p>Expositions 2024 ...
+[ARCHIVES]</p>
+<img src='image5.jpg' alt=''>
 </div>
 <?php include ('../templates-pages/footer_page.php')?>
 </body>

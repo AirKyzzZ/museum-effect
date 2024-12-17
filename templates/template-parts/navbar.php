@@ -17,55 +17,20 @@
                 <li class="dropdown">
                     <a href="templates/pages/collections.php">Collections</a>
                     <div class="dropdown-content">
-                        <a href="#">Collections en ligne du musée d'Aquitaine</a>
+                        <a href="https://musee-aquitaine.opacweb.fr/fr/">Collections en ligne du musée d'Aquitaine</a>
                         <a href="#">Les objets phares du musée</a>
                         <a href="#">Acquisitions récentes</a>
                         <a href="#">Contacter un chargé de collection</a>
                         <a href="#">Le musée, d'hier à aujourd'hui</a>
                         <a href="#">Le Centre Jean Moulin</a>
-                        <a href="#">Le musée Goupil</a>
+                        <a href="https://musee-goupil.opacweb.fr/fr/">Le musée Goupil</a>
                     </div>
                 </li>
-                <li class="dropdown">
-                    <a href="templates/pages/exposition.php">Expositions</a>
-                    <div class="dropdown-content">
-                        <a href="#">Exposition photographique | 28 août 1944 Libres !</a>
-                        <a href="#">Le parcours 400 000 ans d'histoire(s)</a>
-                        <a href="#">En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale</a>
-                        <a href="#">Musée virtuel d'épigraphie</a>
-                        <a href="#">Archives des expositions temporaires</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="templates/pages/visit_acti.php">Visites et Activités</a>
-                    <div class="dropdown-content">
-                    <a href="#">Agenda</a>
-                    <a href="#">Feuilleter les nouveaux programmes</a>
-                    <a href="#">Accueil des groupes</a>
-                    <a href="#">Relais et publics du champ social</a>
-                    <a href="#">Visiteurs en situation de handicap</a>
-                    <a href="#">S'amuser au musée</a>
-                    <a href="#">Vous êtes guide-conférencier</a>
-                    <a href="#">Bibliothèque</a>
-                    <a href="#">Conférences en ligne</a>
-                    <a href="#">Activités scolaires</a>
-                    <a href="#">Le musée dans la classe</a>
-                    <a href="#">Le musée chez soi</a>
-                    <a href="#">Actualités du musée</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="templates/pages/boutique.php">Boutique</a>
-                    <div class="dropdown-content">
-                        <a href="#">Bienvenue dans la boutique</a>
-                        <a href="#">Idées cadeaux</a> 
-                        <a href="#">Librairie</a>
-                        <a href="#">Tirages Félix Arnaudin</a>
-                    </div>
-                </li>
+                <!-- Other dropdown menus -->
+
                 <li class="search-container">
-                    <form class="search-form">
-                        <input type="search" placeholder="Rechercher..." class="search-input">
+                    <form class="search-form" action="search.php" method="get">
+                        <input type="search" placeholder="Rechercher..." class="search-input" name="q" id="search-input">
                         <button type="submit" class="search-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="11" cy="11" r="8"></circle>
@@ -74,10 +39,14 @@
                         </button>
                     </form>
                 </li>
+
                 <li class="cacatoes"><a href="templates/pages/contact.php">Contactez-nous</a></li>
             </ul>
         </div> 
     </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui/1.13.2/jquery-ui.min.js"></script>
 
     <script>
         // Toggle mobile menu
@@ -96,14 +65,12 @@
             }
         });
 
-
         document.querySelectorAll('.dropdown > a').forEach(dropdownToggle => {
             dropdownToggle.addEventListener('click', function(e) {
                 if (window.innerWidth <= 1200) {
                     e.preventDefault();
                     const dropdown = this.parentElement;
                     dropdown.classList.toggle('active');
-                    
 
                     document.querySelectorAll('.dropdown').forEach(otherDropdown => {
                         if (otherDropdown !== dropdown) {
@@ -113,6 +80,7 @@
                 }
             });
         });
+
         window.addEventListener('resize', function() {
             if (window.innerWidth > 1200) {
                 document.querySelectorAll('.dropdown').forEach(dropdown => {
@@ -123,6 +91,25 @@
 
         document.querySelectorAll('.dropdown-content a').forEach((item, index) => {
             item.style.transitionDelay = `${index * 0.01}s`;
+        });
+
+        // Autocomplete functionality using jQuery UI Autocomplete
+        $(function() {
+            $("#search-input").autocomplete({
+                source: function(request, response) {
+                    $.ajax({
+                        url: "search.php",
+                        type: "GET",
+                        data: {
+                            q: request.term
+                        },
+                        success: function(data) {
+                            response(data);
+                        }
+                    });
+                },
+                minLength: 3
+            });
         });
     </script>
 </body>

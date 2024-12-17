@@ -17,13 +17,13 @@
                 <li class="dropdown">
                     <a href="collections.php">Collections</a>
                     <div class="dropdown-content">
-                        <a href="#">Collections en ligne du musée d'Aquitaine</a>
+                        <a href="https://musee-aquitaine.opacweb.fr/fr/">Collections en ligne du musée d'Aquitaine</a>
                         <a href="#">Les objets phares du musée</a>
                         <a href="#">Acquisitions récentes</a>
                         <a href="#">Contacter un chargé de collection</a>
                         <a href="#">Le musée, d'hier à aujourd'hui</a>
                         <a href="#">Le Centre Jean Moulin</a>
-                        <a href="#">Le musée Goupil</a>
+                        <a href="https://musee-goupil.opacweb.fr/fr/">Le musée Goupil</a>
                     </div>
                 </li>
                 <li class="dropdown">
