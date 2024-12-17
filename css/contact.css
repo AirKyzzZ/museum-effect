@@ -24,6 +24,15 @@
     margin-top: 90px;
 }
 
+/* Add this to your contact.css file */
+
+/* Media query for mobile devices */
+@media screen and (max-width: 1200px) {
+    .formulaire {
+      margin-top: 70px; /* Adjust the value to fit your needs */
+    }
+  }
+
 .form-container {
     background: rgba(255, 255, 255, 0.9);
     padding: 3rem;
