@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="css/navbar.css">
-
+<link rel="icon" href="templates/images/logo_head.png" type="image/png">
 <body>
     <nav class="navbar">
         <div class="navbar-container">
@@ -66,11 +66,33 @@
                     <form id="search-form" class="search-form">
                         <input type="search" id="search-input" placeholder="Rechercher..." class="search-input" list="search-options">
                         <datalist id="search-options">
-                            <option value="Collections">
-                            <option value="Expositions">
-                            <option value="Activités">
-                            <option value="Boutique">
-                            <option value="Contact">
+                            <option value="Collections en ligne du musée d'Aquitaine">
+                            <option value="Les objets phares du musée">
+                            <option value="Acquisitions récentes">
+                            <option value="Contacter un chargé de collection">
+                            <option value="Le musée, d'hier à aujourd'hui">
+                            <option value="Le Centre Jean Moulin">
+                            <option value="Le musée, d'hier à aujourd'hui">
+                            <option value="Le musée Goupil">
+                            <option value="Exposition photographique | 28 août 1944 Libres !">
+                            <option value="Le parcours 400 000 ans d'histoire(s)">
+                            <option value=">En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale">
+                            <option value="Musée virtuel d'épigraphie">
+                            <option value="Archives des expositions temporaires">
+                            <option value="Agenda">
+                            <option value="Feuilleter les nouveaux programmes">
+                            <option value="Accueil des groupes">
+                            <option value="Relais et publics du champ social">
+                            <option value="Visiteurs en situation de handicap">
+                            <option value="S'amuser au musée">
+                            <option value="Vous êtes guide-conférencier">
+                            <option value="Bibliothèque">
+                            <option value="Activités scolaires">
+                            <option value="Le musée dans la classe">
+                            <option value="Bienvenue dans la boutique">
+                            <option value="Idées cadeaux">
+                            <option value="Librairie">
+                            <option value="Tirages Félix Arnaudin">
                         </datalist>
                         <button type="submit" class="search-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -133,17 +155,85 @@
             item.style.transitionDelay = `${index * 0.01}s`;
         });
 
-        // Autocomplete functionality using jQuery UI Autocomplete
         const searchRoutes = {
-        "collections": "templates/pages/collections.php",
-        "expositions": "templates/pages/exposition.php",
-        "activités": "templates/pages/visit_acti.php",
-        "boutique": "templates/pages/boutique.php",
-        "contact": "templates/pages/contact.php"
-        };
-        document.getElementById('search-form').addEventListener('submit', function(event) {
+        "collections en ligne du musée d'Aquitaine": "https://musee-aquitaine.opacweb.fr/fr/",
+        "les objets phares du musée": "templates/pages/les-objets-phares-du-musee.php",
+        "acquisitions récentes": "templates/pages/visit_acti.php",
+        "contacter un chargé de collection": "templates/pages/boutique.php",
+        "le musée, d'hier à aujourd'hui": "templates/pages/contact.php",
+        "le centre jean moulin": "templates/pages/exposition.php",
+        "le musée goupil": "templates/pages/contact.php",
+        "exposition photographique | 28 août 1944 libres !": "templates/pages/exposition.php",
+        "le parcours 400 000 ans d'histoire(s)": "templates/pages/exposition.php",
+        "en ligne | destinées juives à bordeaux durant la seconde guerre mondiale": "templates/pages/collections.php",
+        "musée virtuel d'épigraphie": "templates/pages/contact.php",
+        "archives des expositions temporaires": "templates/pages/collections.php",
+        "agenda": "templates/pages/exposition.php",
+        "feuilleter les nouveaux programmes": "templates/pages/visit_acti.php",
+        "accueil des groupes": "templates/pages/boutique.php",
+        "relais et publics du champ social": "templates/pages/contact.php",
+        "visiteurs en situation de handicap": "templates/pages/collections.php",
+        "s'amuser au musée": "templates/pages/exposition.php",
+        "vous êtes guide-conférencier": "templates/pages/visit_acti.php",
+        "bibliothèque": "templates/pages/collections.php",
+        "activités scolaires": "templates/pages/exposition.php",
+        "le musée dans la classe": "templates/pages/contact.php",
+        "bienvenue dans la boutique": "templates/pages/boutique.php",
+        "idées cadeaux": "templates/pages/collections.php",
+        "librairie": "templates/pages/exposition.php",
+        "tirages félix arnaudin": "templates/pages/visit_acti.php"
+    };
+
+    const searchInput = document.getElementById('search-input');
+    const searchOptions = document.getElementById('search-options');
+
+    // Fonction pour masquer les options du datalist jusqu'à la première saisie
+    searchInput.addEventListener('focus', function() {
+        if (this.value === '') {
+            searchOptions.innerHTML = ''; // Vider les options avant la saisie
+        }
+    });
+
+    // Restaure les options du datalist quand l'utilisateur commence à taper
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+        if (query !== '') {
+            // Restaure toutes les options du datalist
+            searchOptions.innerHTML = `
+                <option value="Collections en ligne du musée d'Aquitaine">
+                <option value="Les objets phares du musé">
+                <option value="Acquisitions récentes">
+                <option value="Contacter un chargé de collection">
+                <option value="Le musée, d'hier à aujourd'hui">
+                <option value="Le Centre Jean Moulin">
+                <option value="Le musée Goupil">
+                <option value="Exposition photographique | 28 août 1944 Libres !">
+                <option value="Le parcours 400 000 ans d'histoire(s)">
+                <option value="En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale">
+                <option value="Musée virtuel d'épigraphie">
+                <option value="Archives des expositions temporaires">
+                <option value="Agenda">
+                <option value="Feuilleter les nouveaux programmes">
+                <option value="Accueil des groupes">
+                <option value="Relais et publics du champ social">
+                <option value="Visiteurs en situation de handicap">
+                <option value="S'amuser au musée">
+                <option value="Vous êtes guide-conférencier">
+                <option value="Bibliothèque">
+                <option value="Activités scolaires">
+                <option value="Le musée dans la classe">
+                <option value="Bienvenue dans la boutique">
+                <option value="Idées cadeaux">
+                <option value="Librairie">
+                <option value="Tirages Félix Arnaudin">
+            `;
+        }
+    });
+
+    // Gère la soumission du formulaire
+    document.getElementById('search-form').addEventListener('submit', function(event) {
         event.preventDefault();
-        const query = document.getElementById('search-input').value.trim().toLowerCase();
+        const query = searchInput.value.trim().toLowerCase();
 
         if (searchRoutes[query]) {
             window.location.href = searchRoutes[query];
