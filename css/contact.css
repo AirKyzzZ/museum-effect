@@ -121,7 +121,7 @@
     resize: vertical;
 }
 
-button {
+.pablo {
     position: relative;
     width: 100%;
     padding: 12px;
@@ -136,12 +136,12 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+.pablo:hover {
     background: #ff9f2f;
     transform: translateY(-2px);
 }
 
-button .wave {
+.pablo .wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -152,7 +152,7 @@ button .wave {
     transition: 0.3s;
 }
 
-button:hover .wave {
+.pablo:hover .wave {
     transform: translateX(100%);
 }
 
