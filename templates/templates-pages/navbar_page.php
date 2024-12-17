@@ -1,5 +1,8 @@
-<link rel="stylesheet" href="../../css/navbar.css">
 
+<head>
+    <link rel="icon" href="../images/logo_head.png" type="image/png">
+    <link rel="stylesheet" href="../../css/navbar.css">
+</head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
@@ -15,7 +18,7 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <a href="collections.php">Collections</a>
+                    <a href="">Collections</a>
                     <div class="dropdown-content">
                         <a href="https://musee-aquitaine.opacweb.fr/fr/">Collections en ligne du musée d'Aquitaine</a>
                         <a href="#">Les objets phares du musée</a>
@@ -27,7 +30,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="exposition.php">Expositions</a>
+                    <a href="">Expositions</a>
                     <div class="dropdown-content">
                         <a href="#">Exposition photographique</a>
                         <a href="#">Le parcours 400 000 ans d'histoire(s)</a>
@@ -37,7 +40,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="visit_acti.php">Visites et Activités</a>
+                    <a href="">Visites et Activités</a>
                     <div class="dropdown-content">
                     <a href="#">Agenda</a>
                     <a href="#">Nouveaux programmes</a>
@@ -55,7 +58,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="boutique.php">Boutique</a>
+                    <a href="">Boutique</a>
                     <div class="dropdown-content">
                         <a href="#">Bienvenue dans la boutique</a>
                         <a href="#">Idées cadeaux</a> 
