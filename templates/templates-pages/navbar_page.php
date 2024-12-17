@@ -1,5 +1,8 @@
-<link rel="stylesheet" href="../../css/navbar.css">
 
+<head>
+    <link rel="icon" href="../images/logo_head.png" type="image/png">
+    <link rel="stylesheet" href="../../css/navbar.css">
+</head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
