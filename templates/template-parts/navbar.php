@@ -18,8 +18,8 @@
                     <a href="templates/pages/collections.php">Collections</a>
                     <div class="dropdown-content">
                         <a href="https://musee-aquitaine.opacweb.fr/fr/">Collections en ligne du musée d'Aquitaine</a>
-                        <a href="#">Les objets phares du musée</a>
-                        <a href="#">Acquisitions récentes</a>
+                        <a href="templates/pages/les-objets-phares-du-musee.php">Les objets phares du musée</a>
+                        <a href="templates/pages/acquisitions.php">Acquisitions récentes</a>
                         <a href="#">Contacter un chargé de collection</a>
                         <a href="#">Le musée, d'hier à aujourd'hui</a>
                         <a href="#">Le Centre Jean Moulin</a>
