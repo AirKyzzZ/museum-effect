@@ -6,7 +6,7 @@ global $pdo;
 function sanitizeFileName($string) {
     $string = str_replace('é', 'e', $string); // Replace é with e
     $string = str_replace("'", "-", $string); // Replace ' with -
-    $string = preg_replace('/[^A-Za-z0-9\-]/', '_', $string); // Replace non-alphanumeric characters with underscores
+    $string = preg_replace('/[^A-Za-z0-9\-]/', '-', $string); // Replace non-alphanumeric characters with underscores
     return $string;
 }
 
