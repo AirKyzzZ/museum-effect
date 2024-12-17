@@ -51,11 +51,11 @@ body{
   height: 100%;
   width: 100%;
   background-color: #f79477;
-  border-radius: 25px 25px 0 25px;
+  border-radius: 25px 25px 25px 25px;
 }
 .overlay::before,
 .overlay::after{
-  content: '';
+  /* content: ''; */
   position: absolute;
   right: 0;
   bottom: -40px;
