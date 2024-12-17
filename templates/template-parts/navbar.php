@@ -20,44 +20,44 @@
                         <a href="https://musee-aquitaine.opacweb.fr/fr/">Collections en ligne du musée d'Aquitaine</a>
                         <a href="templates/pages/les-objets-phares-du-musee.php">Les objets phares du musée</a>
                         <a href="templates/pages/acquisitions.php">Acquisitions récentes</a>
-                        <a href="#">Contacter un chargé de collection</a>
-                        <a href="#">Le musée, d'hier à aujourd'hui</a>
-                        <a href="#">Le Centre Jean Moulin</a>
+                        <a href="templates/pages/contacter-un-ou-une-chargee-de-collections.php">Contacter un chargé de collection</a>
+                        <a href="templates/pages/Le-musee-d-hier-a-aujourd-hui.php">Le musée, d'hier à aujourd'hui</a>
+                        <a href="templates/pages/centre-national-jean-moulin.php">Le Centre Jean Moulin</a>
                         <a href="https://musee-goupil.opacweb.fr/fr/">Le musée Goupil</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="">Expositions</a>
                     <div class="dropdown-content">
-                        <a href="#">Exposition photographique | 28 août 1944 Libres !</a>
-                        <a href="#">Le parcours 400 000 ans d'histoire(s)</a>
-                        <a href="#">En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale</a>
-                        <a href="#">Musée virtuel d'épigraphie</a>
-                        <a href="#">Archives des expositions temporaires</a>
+                        <a href="templates/pages/exposition-photographique-28-aout-1944-libres.php">Exposition photographique | 28 août 1944 Libres !</a>
+                        <a href="templates/pages/le-parcours-400-000-ans-dhistoire.php">Le parcours 400 000 ans d'histoire(s)</a>
+                        <a href="templates/pages/expo-virtuelle-destinees-juives-bordeaux-durant-la-seconde-guerre-mondiale.php">En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale</a>
+                        <a href="templates/pages/musee-virtuel-epigraphie.php">Musée virtuel d'épigraphie</a>
+                        <a href="templates/pages/archives-des-expositions-temporaires.php">Archives des expositions temporaires</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="">Visites et Activités</a>
                     <div class="dropdown-content">
-                    <a href="#">Agenda</a>
-                    <a href="#">Feuilleter les nouveaux programmes</a>
-                    <a href="#">Accueil des groupes</a>
-                    <a href="#">Relais et publics du champ social</a>
-                    <a href="#">Visiteurs en situation de handicap</a>
-                    <a href="#">S'amuser au musée</a>
-                    <a href="#">Vous êtes guide-conférencier</a>
-                    <a href="#">Bibliothèque</a>
-                    <a href="#">Activités scolaires</a>
-                    <a href="#">Le musée dans la classe</a>
+                    <a href="templates/pages/Agenda.php">Agenda</a>
+                    <a href="templates/pages/Feuilleter-les-nouveaux-programmes.php">Feuilleter les nouveaux programmes</a>
+                    <a href="templates/pages/Accueil-des-groupes.php">Accueil des groupes</a>
+                    <a href="templates/pages/Relais-et-publics-du-champ-social.php">Relais et publics du champ social</a>
+                    <a href="templates/pages/Visiteurs-en-situation-de-handicap.php">Visiteurs en situation de handicap</a>
+                    <a href="templates/pages/S-amuser-au-musee.php">S'amuser au musée</a>
+                    <a href="templates/pages/Vous-etes-guide-conferencier.php">Vous êtes guide-conférencier</a>
+                    <a href="templates/pages/Bibliotheque.php">Bibliothèque</a>
+                    <a href="templates/pages/Activites-scolaires.php">Activités scolaires</a>
+                    <a href="templates/pages/Le-musee-dans-la-classe.php">Le musée dans la classe</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="">Boutique</a>
                     <div class="dropdown-content">
-                        <a href="#">Bienvenue dans la boutique</a>
-                        <a href="#">Idées cadeaux</a> 
-                        <a href="#">Librairie</a>
-                        <a href="#">Tirages Félix Arnaudin</a>
+                        <a href="templates/pages/Bienvenue-dans-la-boutique.php">Bienvenue dans la boutique</a>
+                        <a href="templates/pages/Idees-cadeaux.php">Idées cadeaux</a> 
+                        <a href="templates/pages/Librairie.php">Librairie</a>
+                        <a href="templates/pages/Tirage-Felix-Arnaudin.php">Tirages Félix Arnaudin</a>
                     </div>
                 </li>
 
