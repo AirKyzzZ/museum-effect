@@ -80,7 +80,7 @@
           
             <h2 class="name">Boutique</h2><div class="card-content">
 
-            <button class="button">Idées cadeaux</button>
+            <button onclick="window.location.href='templates/pages/Idees-cadeaux.php'" class="button">Idées cadeaux</button>
             <button class="button">Tirages Félix Arnaudin</button>
             <button class="button">Librairie</button>
           </div>
