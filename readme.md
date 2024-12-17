@@ -1,16 +1,22 @@
-# Projet Musée d'Aquitaine - Solution Web avec PHP et SQL :muscle:
+# Projet Musée d'Aquitaine - Solution Web avec PHP et SQL :globe_with_meridians:
 
 ## Sommaire
 - [Présentation du projet](#Présentation-du-projet)
+- [Screenshot](#Screenshot)
 - [Équipe](#Équipe)
 - [Objectifs](#Objectifs)
 - [Fonctionnalités](#Fonctionnalités)
 - [Technologies utilisées](#Technologies-utilisées)
 - [Installation](#Installation)
 - [Soutenance orale](#Soutenance-orale)
+- [Soutenance orale](#Soutenance-orale)
 
 ## Présentation du projet
 :star: Ce projet a été réalisé dans le cadre de la formation EPSI (École d'Ingénierie et de Management des Systèmes d'Information) en tant que projet solution web. L'objectif est de créer un site web pour le musée d'Aquitaine, permettant aux visiteurs de découvrir l'histoire et la culture de la région. :star:
+
+## Screenshot
+
+![Screenshot de l'index du site](path/to/your/screenshot.png)
 
 ## Équipe
 - Maxime : Développeur front-end et intégrateur :computer:
