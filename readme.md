@@ -54,7 +54,7 @@
 1. Téléchargez et installez [WAMP](https://www.wampserver.com/) (Windows), [LAMP](https://www.apachefriends.org/index.php) (Linux) ou [MAMP](https://www.mamp.info/) (MacOS) pour avoir un serveur local.
 2. Créez un dossier dans le répertoire racine de votre serveur local (exemple: `wamp64/www/museum-effect`).
 3. Copiez les fichiers du projet dans le dossier créé à l'étape précédente.
-4. Importez la base de données MySQL à partir du fichier `database/museum_aquitaine.sql`.
+4. Importez la base de données MySQL à partir du fichier `formulaire_db.sql`.
 5. Configurez les paramètres de connexion à la base de données dans le fichier `config/database.php`.
 6. Ouvrez votre navigateur web et accédez à l'URL de votre projet (exemple: `http://localhost/museum-effect`).
 
