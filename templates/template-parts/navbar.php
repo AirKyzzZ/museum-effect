@@ -26,7 +26,44 @@
                         <a href="https://musee-goupil.opacweb.fr/fr/">Le musée Goupil</a>
                     </div>
                 </li>
-                <!-- Other dropdown menus -->
+                <li class="dropdown">
+                    <a href="templates/pages/exposition.php">Expositions</a>
+                    <div class="dropdown-content">
+                        <a href="#">Exposition photographique | 28 août 1944 Libres !</a>
+                        <a href="#">Le parcours 400 000 ans d'histoire(s)</a>
+                        <a href="#">En ligne | Destinées juives à Bordeaux durant la Seconde Guerre mondiale</a>
+                        <a href="#">Musée virtuel d'épigraphie</a>
+                        <a href="#">Archives des expositions temporaires</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="templates/pages/visit_acti.php">Visites et Activités</a>
+                    <div class="dropdown-content">
+                    <a href="#">Agenda</a>
+                    <a href="#">Feuilleter les nouveaux programmes</a>
+                    <a href="#">Accueil des groupes</a>
+                    <a href="#">Relais et publics du champ social</a>
+                    <a href="#">Visiteurs en situation de handicap</a>
+                    <a href="#">S'amuser au musée</a>
+                    <a href="#">Vous êtes guide-conférencier</a>
+                    <a href="#">Bibliothèque</a>
+                    <a href="#">Conférences en ligne</a>
+                    <a href="#">Activités scolaires</a>
+                    <a href="#">Le musée dans la classe</a>
+                    <a href="#">Le musée chez soi</a>
+                    <a href="#">Actualités du musée</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="templates/pages/boutique.php">Boutique</a>
+                    <div class="dropdown-content">
+                        <a href="#">Bienvenue dans la boutique</a>
+                        <a href="#">Idées cadeaux</a> 
+                        <a href="#">Librairie</a>
+                        <a href="#">Tirages Félix Arnaudin</a>
+                    </div>
+                </li>
+
 
                 <li class="search-container">
                     <form class="search-form" action="search.php" method="get">
