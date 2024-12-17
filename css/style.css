@@ -2,3 +2,10 @@ body {
     padding: 12px;
 }
 
+@media screen and (max-width: 600px) {
+    .navbar {
+      /* Adjust the navbar styles for smaller screens */
+      font-size: 14px;
+      padding: 10px;
+    }
+  }

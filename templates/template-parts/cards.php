@@ -31,7 +31,7 @@
 
           
             <h2 class="name">Expositions</h2><div class="card-content">
-            <button class="button">Le parcours 400 000 ans d'histoire</button>
+            <button onclick="window.location.href='templates/pages/le-parcours-400-000-ans-dhistoires.php'" class="button">Le parcours 400 000 ans d'histoire</button>
           </div>
         </div>
         <div class="card swiper-slide">
@@ -46,10 +46,10 @@
           
             <h2 class="name">Visites</h2><div class="card-content">
 
-            <button class="button">Agenda</button>
-            <button class="button">S'amuser au musée</button>
-            <button class="button">Bibliothèque</button>
-            <button class="button">Activités scolaires</button>
+            <button onclick="window.location.href='templates/pages/Agenda.php'" class="button">Agenda</button>
+            <button onclick="window.location.href='templates/pages/S-amuser-au-musee.php'" class="button">S'amuser au musée</button>
+            <button onclick="window.location.href='templates/pages/Bibliotheque.php'" class="button">Bibliothèque</button>
+            <button onclick="window.location.href='templates/pages/Activites-scolaires.php'" class="button">Activités scolaires</button>
           </div>
         </div>
         <div class="card swiper-slide">
@@ -64,8 +64,8 @@
           
             <h2 class="name">Collections</h2><div class="card-content">
 
-            <button class="button">Les objets phares du musée</button>
-            <button class="button">Acquisitions récentes</button>
+            <button onclick="window.location.href='templates/pages/les-objets-phares-du-musee.php'" class="button">Les objets phares du musée</button>
+            <button onclick="window.location.href='templates/pages/acquisitions.php'" class="button">Acquisitions récentes</button>
           </div>
         </div>
         <div class="card swiper-slide">
@@ -81,8 +81,8 @@
             <h2 class="name">Boutique</h2><div class="card-content">
 
             <button onclick="window.location.href='templates/pages/Idees-cadeaux.php'" class="button">Idées cadeaux</button>
-            <button class="button">Tirages Félix Arnaudin</button>
-            <button class="button">Librairie</button>
+            <button onclick="window.location.href='templates/pages/Tirage-Felix-Arnaudin.php'" class="button">Tirages Félix Arnaudin</button>
+            <button onclick="window.location.href='templates/pages/Librairie.php'" class="button">Librairie</button>
           </div>
         </div>
       </div>
